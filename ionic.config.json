@@ -1,0 +1,7 @@
+{
+  "name": "lunata",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
