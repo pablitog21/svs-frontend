@@ -1,0 +1,31 @@
+<ion-content id="center_conte" color="medium"><br>
+  <ion-grid>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <img src="assets/icon/icon.png" width="200" height="200"><br><br>
+            <form [formGroup]="formularioLogin">
+              <ion-item id="item1">
+                <ion-input formControlName="correo" placeholder="Correo"></ion-input>
+              </ion-item>
+              <ion-item id="item2">
+                <ion-input formControlName="password" placeholder="Contraseña"
+                  [type]="showPassword ? 'text' : 'password' "></ion-input>
+                <ion-icon slot="end" [name]="passwordToggleIcon" (click)="togglePassword()" color="primary"></ion-icon>
+              </ion-item>
+            </form>
+            <ion-footer id="check"><br>
+              <ion-toolbar>
+                <ion-button color="success" id="ingresar" (click)="ingresar()">Ingresar</ion-button><br>
+                <ion-button color="success" [routerLink]="['/registro']">Registrarse</ion-button>
+              </ion-toolbar>
+            </ion-footer>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

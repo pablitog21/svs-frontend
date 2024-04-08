@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "NETFLIX",
+            "precio":"$10.000",
+            "image": "netflix.png",
+            "desc": "12Dias 1Pant"
+        },
+        {
+            "id": 2,
+            "name": "HBO",
+            "precio":"$10.000",
+            "image": "hbo.png",
+            "desc": "12Dias 1Pant"
+        },
+        {
+            "id": 3,
+            "name": "SPOTIFY",
+            "precio":"$10.000",
+            "image": "spotify.png",
+            "desc": "12Dias 1Pant"
+        },
+        {
+            "id": 4,
+            "name": "PLEX",
+            "precio":"$10.000",
+            "image": "plex.png",
+            "desc": "12Dias 1Pant"
+        },
+        {
+            "id": 5,
+            "name": "PRIME VIDEO",
+            "precio":"$10.000",
+            "image": "prime.png",
+            "desc": "12Dias 1Pant "
+        },
+        {
+            "id": 6,
+            "name": "YOUTUBE PRE",
+            "precio":"$10.000",
+            "image": "youtube.png",
+            "desc": "12Dias 1Pant"
+        },
+        {
+            "id": 7,
+            "name": "DISNEY+",
+            "precio":"$10.000",
+            "image": "disney.png",
+            "desc": "12Dias 1Pant"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons  slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Registrar Cliente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card>
+      <ion-card-content>
+        <form>
+          <ion-item>
+            <ion-label position="stacked">Nombres</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Apellidos</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Fecha de registro</ion-label>
+            <ion-input type="date"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Dirección</ion-label>
+            <ion-input></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Telefono</ion-label>
+            <ion-input type="number"></ion-input>
+          </ion-item>         
+          <ion-item>
+            <ion-label position="stacked">Email</ion-label>
+            <ion-input  type="email"></ion-input>
+          </ion-item>
+          <ion-footer id="client"><br>
+            <ion-button (click)="actualizar()" color="primary">Actualizar</ion-button>
+            <ion-button (click)="guardar()" color="primary">Guardar</ion-button>
+            <ion-button (click)="eliminar()" color="danger">Eliminar</ion-button>
+          </ion-footer>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>

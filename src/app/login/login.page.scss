@@ -1,0 +1,44 @@
+#tittle {
+    text-align: center;
+}
+
+#center_conte {
+    text-align: center;
+}
+
+#item1 {
+    text-align: center;
+}
+#item2 {
+    text-align: center;
+}
+#check {
+    text-align: center;
+}
+
+ion-card {   
+    border-radius: 15px;
+    width: 250px;
+    height: 500px;
+    text-align: center;
+    font-size: 24px;
+}
+
+:host {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  .type-toggle {
+      padding-inline-start: 0.5rem;
+  .show-option,
+      .hide-option {
+        font-size: 1.2rem;
+        display: block;
+        &:not(ion-icon) {
+          text-transform: uppercase;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+

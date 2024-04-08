@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Gestion Seguridad Social</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card>
+      <ion-card-content>
+        <form>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-item>
+                  <ion-label position="stacked">Nombres</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="stacked">Apellidos</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+                <ion-label color="dark">Tipo de identificacion</ion-label>
+                <ion-item>
+                  <ion-select value="01">
+                    <ion-select-option value="01">Seleccionar</ion-select-option>
+                    <ion-select-option value="02">Cedula de Ciudadania</ion-select-option>
+                    <ion-select-option value="03">Cedula de Extrangeria</ion-select-option>
+                    <ion-select-option value="04">Targeta Identidad</ion-select-option>
+                  </ion-select>
+                </ion-item>
+              </ion-col>
+              <ion-col>
+                <ion-item>
+                  <ion-label position="stacked">Numero de documento</ion-label>
+                  <ion-input type="number"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="stacked">Telefono</ion-label>
+                  <ion-input type="number"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="stacked">Dirección</ion-label>
+                  <ion-input></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="stacked">Email</ion-label>
+                  <ion-input type="email"></ion-input>
+                </ion-item>
+              </ion-col>
+              <ion-footer id="segut"><br>
+                <ion-button (click)="actualizar()" color="primary">Actualizar</ion-button>
+                <ion-button (click)="registrar()" color="primary">Registrar</ion-button>
+                <ion-button (click)="eliminar()" color="danger">Eliminar</ion-button>
+              </ion-footer>
+            </ion-row>
+          </ion-grid>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>

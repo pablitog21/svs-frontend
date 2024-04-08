@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Ventas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let producto of productos">
+        <ion-card><br>
+          <img src="../../assets/img/{{producto.image}}" width="200" height="200">
+          <ion-card-header>
+            <div class="card-title">{{producto.name}}<br>{{producto.desc}}<br>{{producto.precio}}</div>
+          </ion-card-header>
+          <ion-button color="success" (click)="setOpen(true)">
+            <ion-icon name="cart-outline"></ion-icon>
+          </ion-button>
+
+          <ion-modal [isOpen]="isModalOpen" width="20" height="412">
+            <!---->
+            <ng-template>
+              <ion-header>
+                <ion-toolbar>
+                  <ion-title><b>Información</b></ion-title>
+                  <ion-buttons slot="end">
+                    <ion-button (click)="setOpen(false)" ><b>Atras</b></ion-button>
+                  </ion-buttons>
+                </ion-toolbar>
+              </ion-header>
+              <ion-content class="ion-padding">
+                <p id="inf">
+                  Para realizar su compra debes consignar el valor del producto a la cuenta de Nequi 316 725 19 67. <br><br>
+                  Envia recibo de pago al WhatsApp para hacerle entrega del producto adquirido.
+                </p><br>
+                <ion-button color="success" href="https://api.whatsapp.com/send?phone=573008259490" target="_blank"
+                  id="ips">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </ion-button>
+              </ion-content>
+            </ng-template>
+          </ion-modal>
+          
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
