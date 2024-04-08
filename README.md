@@ -1,3 +1,7 @@
+Este proyecto fue creado durante el curso de ADSI impartido por el Sena.
+
+Aquí tienes algunas imágenes del proyecto:
+
 ![image](https://github.com/pablitog21/svs-frontend/assets/149818575/e3526d0a-e3a5-4eab-b168-585a1f7eddd4)
 
 ![image](https://github.com/pablitog21/svs-frontend/assets/149818575/f5146389-4206-4382-a774-06907b478ad3)
@@ -13,6 +17,9 @@
 ![image](https://github.com/pablitog21/svs-frontend/assets/149818575/b8de2b19-e144-4c6d-8afc-4e338b3131d8)
 
 ![image](https://github.com/pablitog21/svs-frontend/assets/149818575/75d76dba-b8a5-4c74-85ce-cb31e0075e72)
+
+El repositorio del backend asociado a este proyecto se encuentra en: [https://github.com/pablitog21/svs-backend](https://github.com/pablitog21/svs-backend)
+
 
 
 
